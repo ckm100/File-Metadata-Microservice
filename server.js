@@ -14,10 +14,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-
 app.get("/:size", function (req, res) {
-
-    console.log(req.secure);
 
     res.end();
 

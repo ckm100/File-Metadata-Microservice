@@ -4,6 +4,20 @@ var submit = document.getElementById("submit"),
     fileSize = document.getElementById("filesize"),
     data = new FormData();
 
+file.addEventListener("change", function (evt) {
+
+    if (evt.target.value !== "") {
+
+        submit.disabled = false;
+
+    } else {
+
+        submit.disabled = true;
+
+    }
+
+}, false);
+
 submit.addEventListener("click", function () {
 
     submit.disabled = true;
